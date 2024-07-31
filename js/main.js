@@ -1,3 +1,21 @@
+// Función para controlar el menú móvil
+function setupMobileMenu() {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('.navbar-menu');
+    
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setupMobileMenu);
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener('DOMContentLoaded', setupMobileMenu);
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener('DOMContentLoaded', setupMobileMenu);
 // Función para cambiar el color de fondo del body cada 5 segundos
 function changeBackgroundColor() {
     const colors = ['#f0f2f5', '#e6f3ff', '#fff5e6', '#f0fff0'];
@@ -110,5 +128,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Inicializar tooltips
 tippy('[data-tippy-content]');
-
 
