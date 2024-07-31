@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparación - Instalación SO Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    Preparación
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Requisitos y pasos previos
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenido" class="section">
+        <div class="container">
+            <div class="content">
+                <div class="columns is-centered">
+                    <div class="column is-10">
+                        <!-- Caja 1 -->
+                        <div class="box">
+                            <h2 class="title is-2 has-text-centered">Requisitos mínimos de hardware para Windows 10</h2>
+                            <div class="columns">
+                                <div class="column">
+                                    <ul>
+                                        <li><strong>Procesador:</strong> 1 GHz o más rápido</li>
+                                        <li><strong>RAM:</strong> 
+                                            <ul>
+                                                <li>1 GB para 32 bits</li>
+                                                <li>2 GB para 64 bits</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Espacio en disco duro:</strong> 
+                                            <ul>
+                                                <li>16 GB para 32 bits</li>
+                                                <li>32 GB para 64 bits</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <ul>
+                                        <li><strong>Tarjeta gráfica:</strong> DirectX 9 o posterior con controlador WDDM 1.0</li>
+                                        <li><strong>Pantalla:</strong> 800x600 píxeles</li>
+                                        <li><strong>Conexión a Internet:</strong> Necesaria para descargar y usar algunas características</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notification is-warning mt-5">
+                            <strong>Nota:</strong> Si tu equipo no cumple con estos requisitos, no podrás instalar Windows 10.
+                        </div>
+
+                        <!-- Caja 2 -->
+                        <div class="box mt-6">
+                            <h2 class="title is-2 has-text-centered">Descargar los drivers para componentes críticos</h2>
+                            <p>Antes de comenzar la instalación, es crucial tener los drivers correctos para tu hardware. Sigue estos pasos:</p>
+                            <ol>
+                                <li>Identifica la marca y modelo de tu placa base y otros componentes clave (tarjeta gráfica, chipset, etc.)</li>
+                                <li>Visita el sitio web oficial del fabricante</li>
+                                <li>Busca la sección de soporte o descargas</li>
+                                <li>Descarga los últimos drivers compatibles con Windows 10</li>
+                            </ol>
+                        </div>
+
+                            <div class="notification is-info">
+                                <strong>Consejo:</strong> Guarda los drivers en un dispositivo USB separado del que usarás para la instalación de Windows.
+                            </div>
+
+                        <!-- Caja 3 -->
+                        <div class="box mt-6">
+                            <h2 class="title is-2 has-text-centered">Revisar la red o batería</h2>
+                            <p>Es fundamental mantener tu equipo conectado a una fuente de energía estable durante todo el proceso de instalación. Asegúrate de:</p>
+                            <ul>
+                                <li>Tener el cargador conectado si es un portátil</li>
+                                <li>Contar con una conexión a Internet estable para descargar actualizaciones durante la instalación</li>
+                            </ul>
+                        </div>
+
+                        <!-- Caja 4 -->
+                        <div class="box mt-6">
+                            <h2 class="title is-2 has-text-centered">Descargar imagen ISO Windows 10</h2>
+                            <p>Para obtener la imagen ISO oficial de Windows 10:</p>
+                            <ol>
+                                <li>Visita la <a href="https://www.microsoft.com/es-es/software-download/windows10" target="_blank">página oficial de descarga de Windows 10</a></li>
+                                <li>Selecciona "Descargar ahora la herramienta"</li>
+                                <li>Ejecuta la herramienta y sigue las instrucciones para crear un medio de instalación</li>
+                            </ol>
+                        </div>
+
+                        <!-- Caja 5 -->
+                        <div class="box mt-6">
+                            <h2 class="title is-2 has-text-centered">Respaldar información importante</h2>
+                            <p>Antes de formatear tu equipo, asegúrate de respaldar:</p>
+                            <ul>
+                                <li>Documentos personales</li>
+                                <li>Fotos y videos</li>
+                                <li>Marcadores del navegador</li>
+                                <li>Configuraciones de aplicaciones importantes</li>
+                            </ul>
+                        </div>
+                            <div class="notification is-danger">
+                                <strong>¡Advertencia!</strong> El formateo borrará todos los datos de tu disco duro. Asegúrate de tener copias de seguridad de toda la información importante.
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024 Tutorial de Instalación SO. Todos los derechos reservados.</p>
+                <p class="has-text-light">Desarrollado por Rodrigo Delgado para la Escuela de Educación Secundaria Técnica N°5 Amancio Williams</p>
+            </div>
+        </div>
+    </footer>
+    
+        <script src="js/main.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</body>
+</html>

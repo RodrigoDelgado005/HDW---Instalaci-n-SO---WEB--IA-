@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de USB Booteable - Instalación SO Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    Creación de USB Booteable
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Preparando el medio de instalación
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="title is-2 has-text-centered">¿Qué es un USB Booteable?</h2>
+                <div class="box mt-6">
+                    <p>Un USB booteable es una unidad flash USB que contiene un sistema operativo y está configurada para que un ordenador pueda arrancar (boot) desde ella. Se utiliza principalmente para instalar sistemas operativos, como Windows 10.</p>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="title is-2 has-text-centered">Requisitos</h2>
+                        <div class="box mt-6">
+                            <ul>
+                                <li>Una unidad flash USB con al menos 8 GB de capacidad</li>
+                                <li>La imagen ISO de Windows 10</li>
+                                <li>El programa Rufus (para crear el USB booteable)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                        <h2 class="title is-2 has-text-centered">Pasos para crear un USB Booteable con Rufus</h2>
+                        <div class="columns">
+                            <div class="column">
+                        <div class="box mt-6">
+                            <ol>
+                                <li>Descarga Rufus desde <a href="https://rufus.ie/es/" target="_blank">su página oficial</a></li>
+                                <li>Inserta tu unidad flash USB en la computadora</li>
+                                <li>Abre Rufus</li>
+                                <li>En "Dispositivo", selecciona tu unidad flash USB</li>
+                                <li>En "Selección de arranque", haz clic en "Seleccionar" y elige la imagen ISO de Windows 10</li>
+                                <figure>
+                                    <img src="../images/iso.png" alt="Seleccionar Imagen Iso">
+                                </figure>
+                                <li>En "Esquema de partición", elige MBR</li>
+                                <figure>
+                                    <img src="../images/mbr.png" alt="seleccionar MBR">
+                                </figure>
+                                
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box mt-6">
+                            <ol start="7">
+                                <li>Haz clic en "Empezar"</li>
+                                <figure>
+                                    <img src="../images/empezar.png" alt="Empezar Proceso">
+                                </figure>
+                            <li>Si aparece un mensaje de advertencia, haz clic en "OK"</li>
+                                <li>Espera a que el proceso termine</li>
+                                <figure class="display">
+                                    <img src="../images/cerrar.png" alt="Proceso Terminado">
+                                </figure>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification is-warning">
+                    <strong>Advertencia:</strong> Este proceso formateará tu unidad USB. Asegúrate de haber respaldado cualquier dato importante antes de continuar.
+                </div>
+
+                <h2 class="title is-2 has-text-centered">Usando la herramienta oficial de Microsoft</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="box mt-6">
+                            <p>Alternativamente, puedes usar la herramienta oficial de Microsoft para crear un medio de instalación:</p>
+                            <ol>
+                                <li>Descarga la <a href="https://www.microsoft.com/es-es/software-download/windows10" target="_blank">herramienta de creación de medios de Windows 10</a></li>
+                                <li>Ejecuta la herramienta y acepta los términos de licencia</li>
+                                <li>Selecciona "Crear medios de instalación para otro PC"</li>
+                                <figure>
+                                    <img src="../images/crear.png" alt="Crear Medio">
+                                </figure>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box mt-6">
+                            <ol start="4">
+                                <li>Elige la versión de Windows y la arquitectura (32 o 64 bits)</li>
+                                <li>Selecciona "Unidad flash USB" como medio</li>
+                                <li>Selecciona tu unidad USB</li>
+                                <li>Espera a que se complete la descarga y la creación del medio de instalación</li>
+                                <figure>
+                                    <img src="../images/progreso.png" alt="progreso de instalacion">
+                                </figure>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification is-info">
+                    <strong>Consejo:</strong> La herramienta de Microsoft es más fácil de usar, pero Rufus ofrece más opciones de configuración avanzada.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024 Tutorial de Instalación SO. Todos los derechos reservados.</p>
+                <p class="has-text-light">Desarrollado por Rodrigo Delgado para la Escuela de Educación Secundaria Técnica N°5 Amancio Williams</p>
+            </div>
+        </div>
+    </footer>
+    
+        <script src="js/main.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</body>
+</html>
