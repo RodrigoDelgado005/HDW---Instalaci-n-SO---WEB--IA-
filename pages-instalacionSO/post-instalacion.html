@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Instalación - Instalación SO Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../pages-instalacionSO/index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    Post-Instalación
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Configuración y optimización de Windows 10
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="title is-2">Pasos post-instalación</h2>
+                
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-3">1. Actualizaciones de Windows</h3>
+                            <ol>
+                                <li>Abre Configuración (Windows + I)</li>
+                                <li>Ve a "Actualización y seguridad"</li>
+                                <li>Haz clic en "Windows Update"</li>
+                                <li>Selecciona "Buscar actualizaciones"</li>
+                                <li>Instala todas las actualizaciones disponibles</li>
+                                <li>Una vez instaladas todas las actualizaciones, reinicia el equipo para vertificar que se apliquen dichas actualizaciones</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-3">2. Instalar controladores</h3>
+                            <p>Puedes utilizar Windows Update o descargar los controladores directamente del sitio web del fabricante:</p>
+                            <ul>
+                                <li>Tarjeta gráfica</li>
+                                <li>Chipset</li>
+                                <li>Red</li>
+                                <li>Audio</li>
+                                <li>Otros componentes específicos de tu hardware</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-3">3. Instalar software esencial</h3>
+                            <ul>
+                                <li>Navegadores web (ej. Chrome, Firefox)</li>
+                                <li>Suites de ofimática (ej. Microsoft Office, LibreOffice)</li>
+                                <li>Antivirus (Windows Defender viene preinstalado, pero puedes optar por otras alternativas)</li>
+                                <li>Reproductores multimedia</li>
+                                <li>Compresores de archivos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-3">4. Configuraciones recomendadas</h3>
+                            <h4 class="title is-4">Desactivar programas de inicio:</h4>
+                            <ol>
+                                <li>Presiona Ctrl + Shift + Esc para abrir el Administrador de Tareas</li>
+                                <li>Ve a la pestaña "Inicio"</li>
+                                <li>Desactiva los programas que no necesites al iniciar Windows</li>
+                                <li>Configura que aplicaciones quieres que se ejecuten al iniciar la computadora</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h3 class="title is-3">5. Eliminar bloatware</h3>
+                    <p>Windows 10 viene con algunas aplicaciones preinstaladas que podrías no necesitar. Considera desinstalar:</p>
+                    <ul>
+                        <li>Juegos de la Tienda Windows (ej. Candy Crush Saga)</li>
+                        <li>Skype (si no lo usas)</li>
+                        <li>OneDrive (si no utilizas almacenamiento en la nube)</li>
+                        <li>Aplicaciones de Office preinstaladas (si tienes tu propia versión)</li>
+                        <li>Aplicaciones de medios como Groove Música y Películas y TV (si prefieres otros reproductores)</li>
+                    </ul>
+                </div>
+    
+                <div class="notification is-info">
+                    <strong>Consejo:</strong> Sé cuidadoso al desinstalar aplicaciones. Si no estás seguro, es mejor dejarlas instaladas para evitar problemas con el sistema.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024 Tutorial de Instalación SO. Todos los derechos reservados.</p>
+                <p class="has-text-light">Desarrollado por Rodrigo Delgado para la Escuela de Educación Secundaria Técnica N°5 Amancio Williams</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66de621869870fb5788b843d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
