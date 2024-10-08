@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Instalación SO Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navbar (same as other pages) -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                    <a class="navbar-item" href="programacion.html">Programación</a>
+                    <a class="navbar-item" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-info">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    Preguntas Frecuentes
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Respuestas a las dudas más comunes sobre la instalación de sistemas operativos
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="title is-2">Preguntas Generales</h2>
+
+                <div class="box">
+                    <h2 class="title is-2">Soluciones y Procedimientos Detallados</h2>
+                
+                    <div class="content">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-tools"></i></span>
+                                <span>Preparación</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: No hay suficiente espacio en el dispositivo USB</h4>
+                                <ol>
+                                    <li>Asegúrate de usar un dispositivo USB con al menos 8GB de capacidad.</li>
+                                    <li>Formatea el dispositivo USB usando el formato FAT32 o NTFS.</li>
+                                    <li>Si el problema persiste, intenta con otro dispositivo USB.</li>
+                                </ol>
+                
+                                <h4 class="title is-5">Error: No se puede descargar la imagen ISO de Windows</h4>
+                                <ol>
+                                    <li>Verifica tu conexión a internet.</li>
+                                    <li>Intenta descargar desde el sitio oficial de Microsoft usando un navegador diferente.</li>
+                                    <li>Si el problema continúa, usa una herramienta de descarga alternativa como el Asistente de instalación de Windows.</li>
+                                </ol>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-usb"></i></span>
+                                <span>Creación de USB Booteable</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: Rufus no detecta el dispositivo USB</h4>
+                                <ol>
+                                    <li>Desconecta y vuelve a conectar el dispositivo USB.</li>
+                                    <li>Prueba con un puerto USB diferente.</li>
+                                    <li>Actualiza los controladores USB de tu computadora.</li>
+                                    <li>Reinicia tu computadora y vuelve a intentar.</li>
+                                </ol>
+                
+                                <h4 class="title is-5">Error: El proceso de creación del USB booteable falla</h4>
+                                <ol>
+                                    <li>Asegúrate de que la imagen ISO no esté corrupta descargándola nuevamente.</li>
+                                    <li>Ejecuta Rufus como administrador.</li>
+                                    <li>Deshabilita temporalmente el antivirus durante el proceso.</li>
+                                    <li>Intenta con una versión diferente de Rufus.</li>
+                                </ol>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-microchip"></i></span>
+                                <span>BIOS/UEFI</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: No se puede acceder a la BIOS/UEFI</h4>
+                                <ol>
+                                    <li>Reinicia tu computadora y presiona repetidamente la tecla de acceso a la BIOS (generalmente F2, F10, F12 o Delete).</li>
+                                    <li>Si el problema persiste, consulta el manual de tu placa base o computadora para la tecla correcta.</li>
+                                    <li>En algunos casos, puede ser necesario resetear la CMOS para restaurar la configuración predeterminada de la BIOS.</li>
+                                </ol>
+                        
+                                <h4 class="title is-5">Error: No se encuentra la opción de arranque desde USB</h4>
+                                <ol>
+                                    <li>Asegúrate de que el USB esté correctamente conectado antes de entrar en la BIOS/UEFI.</li>
+                                    <li>Busca opciones como "Boot Order", "Boot Priority" o "Boot Sequence".</li>
+                                    <li>Si no aparece, verifica si hay una opción para habilitar el arranque desde USB en la configuración de la BIOS.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fab fa-windows"></i></span>
+                                <span>Instalación de Windows</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: "Windows no se puede instalar en este disco"</h4>
+                                <ol>
+                                    <li>Asegúrate de que el disco duro esté formateado correctamente (GPT para UEFI, MBR para BIOS).</li>
+                                    <li>Verifica que el disco tenga suficiente espacio libre.</li>
+                                    <li>Si el problema persiste, intenta crear nuevas particiones durante la instalación.</li>
+                                </ol>
+                        
+                                <h4 class="title is-5">Error: La instalación se congela o se reinicia</h4>
+                                <ol>
+                                    <li>Verifica que tu hardware cumpla con los requisitos mínimos de Windows.</li>
+                                    <li>Desconecta todos los periféricos no esenciales.</li>
+                                    <li>Actualiza la BIOS/UEFI a la última versión disponible.</li>
+                                    <li>Realiza una comprobación de memoria RAM con herramientas como MemTest86.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-cogs"></i></span>
+                                <span>Post-Instalación</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: Dispositivos no reconocidos después de la instalación</h4>
+                                <ol>
+                                    <li>Abre el Administrador de dispositivos y busca dispositivos con signos de exclamación.</li>
+                                    <li>Descarga e instala los controladores más recientes desde el sitio web del fabricante.</li>
+                                    <li>Utiliza Windows Update para buscar y instalar controladores automáticamente.</li>
+                                </ol>
+                        
+                                <h4 class="title is-5">Error: Windows no se activa después de la instalación</h4>
+                                <ol>
+                                    <li>Verifica que estás usando una clave de producto válida.</li>
+                                    <li>Asegúrate de que tu conexión a Internet esté funcionando correctamente.</li>
+                                    <li>Intenta activar Windows manualmente a través de la configuración del sistema.</li>
+                                    <li>Si el problema persiste, contacta con el soporte de Microsoft.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-code"></i></span>
+                                <span>Programación</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <h4 class="title is-5">Error: No se puede instalar un entorno de desarrollo</h4>
+                                <ol>
+                                    <li>Asegúrate de tener los permisos de administrador necesarios.</li>
+                                    <li>Verifica que tu sistema cumple con los requisitos mínimos del software.</li>
+                                    <li>Desactiva temporalmente el antivirus durante la instalación.</li>
+                                    <li>Intenta descargar e instalar una versión anterior del software.</li>
+                                </ol>
+                        
+                                <h4 class="title is-5">Error: Problemas de compatibilidad con librerías o frameworks</h4>
+                                <ol>
+                                    <li>Verifica que estás usando versiones compatibles de todas las librerías y frameworks.</li>
+                                    <li>Actualiza tu entorno de desarrollo y todas las dependencias a las últimas versiones estables.</li>
+                                    <li>Consulta la documentación oficial para problemas conocidos de compatibilidad.</li>
+                                    <li>Busca soluciones en foros de desarrolladores o en Stack Overflow.</li>
+                                </ol>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                
+
+                <div class="box">
+                    <h2 class="title is-2">Nuestro ChatBot Miguel</h2>
+                
+                    <div class="content">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span class="icon"><i class="fas fa-robot"></i></span>
+                                <span>¿Cómo funciona nuestro ChatBot Miguel?</span>
+                                <span class="icon is-pulled-right"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer" style="display: none;">
+                                <p>Miguel es nuestro asistente virtual diseñado para ofrecer una experiencia sencilla e intuitiva. Aquí te explicamos cómo funciona:</p>
+                                <ol>
+                                    <li><strong>Inicio de la Interacción:</strong> Al hacer clic en el ícono del ChatBot, se abre una ventana de chat. Miguel se presenta y solicita tu nombre.</li>
+                                    <li><strong>Saludo Personalizado:</strong> Miguel te saluda usando tu nombre.</li>
+                                    <li><strong>Menú de Opciones:</strong> Se muestra un menú con categorías como Instalación de sistemas operativos, Migración, Actualización, etc.</li>
+                                    <li><strong>Asistencia Personalizada:</strong> Miguel solicita más detalles y brinda una respuesta clara y precisa.</li>
+                                    <li><strong>Ayuda Adicional:</strong> Miguel pregunta si necesitas más asistencia y te guía según tu respuesta.</li>
+                                </ol>
+                                <div class="has-text-centered">
+                                    <img src="../images/chatbot-diagram.png" alt="Diagrama de funcionamiento del ChatBot Miguel" class="image is-fullwidth">
+                                </div>
+                                <p class="mt-4 has-text-centered">
+                                    <strong>¿Listo para probar a Miguel?</strong><br>
+                                    ¡Haz clic en el ícono del chat en la esquina inferior derecha de la pantalla!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    
+                    faqItems.forEach(item => {
+                        const question = item.querySelector('.faq-question');
+                        const answer = item.querySelector('.faq-answer');
+                        const icon = question.querySelector('.is-pulled-right i');
+                        
+                        question.addEventListener('click', () => {
+                            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+                            icon.classList.toggle('fa-chevron-down');
+                            icon.classList.toggle('fa-chevron-up');
+                        });
+                    });
+                });
+                </script>
+                
+                <style>
+                .faq-item {
+                    margin-bottom: 1rem;
+                }
+                .faq-question {
+                    background-color: #f5f5f5;
+                    padding: 1rem;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+                .faq-answer {
+                    padding: 1rem;
+                    background-color: #fff;
+                    border: 1px solid #f5f5f5;
+                }
+                </style>       
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66de621869870fb5788b843d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+</html>
+
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                        <li><a href="programacion.html" class="has-text-info">Programación</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="has-text-info">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024 Tutorial de Instalación SO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66de621869870fb5788b843d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>

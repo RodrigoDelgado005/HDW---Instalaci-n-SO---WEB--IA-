@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación - Tutorial de Instalación SO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../pages-instalacionSO/index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                    <a class="navbar-item" href="programacion.html">Programación</a>
+                    <a class="navbar-item" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    <i class="fas fa-code"></i> Programación
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Aprende los fundamentos de la programación
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4"><i class="fab fa-python"></i> Python</h3>
+                            <p>Python es un lenguaje de programación versátil y fácil de aprender. Es ideal para principiantes y expertos por igual.</p>
+                            <button class="button is-primary mt-3" onclick="toggleCode('pythonCode')">Ver ejemplo</button>
+                            <div id="pythonCode" style="display: none;" class="mt-3">
+                                <pre><code>
+def saludar(nombre):
+    print(f"¡Hola, {nombre}!")
+
+saludar("Mundo")
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4"><i class="fab fa-js"></i> JavaScript</h3>
+                            <p>JavaScript es el lenguaje de programación de la web. Es esencial para crear sitios web interactivos.</p>
+                            <button class="button is-primary mt-3" onclick="toggleCode('jsCode')">Ver ejemplo</button>
+                            <div id="jsCode" style="display: none;" class="mt-3">
+                                <pre><code>
+function saludar(nombre) {
+    console.log(`¡Hola, ${nombre}!`);
+}
+
+saludar("Mundo");
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4"><i class="fab fa-html5"></i> HTML</h3>
+                            <p>HTML es el lenguaje de marcado estándar para crear páginas web. Define la estructura de tu contenido web.</p>
+                            <button class="button is-primary mt-3" onclick="toggleCode('htmlCode')">Ver ejemplo</button>
+                            <div id="htmlCode" style="display: none;" class="mt-3">
+                                <pre><code>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1>¡Hola, Mundo!</h1>
+</body>
+</html>
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Recursos de Aprendizaje</h2>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="box">
+                        <h3 class="title is-4"><i class="fas fa-book"></i> Libros Recomendados</h3>
+                        <ul>
+                            <li>Python Crash Course</li>
+                            <li>JavaScript: The Good Parts</li>
+                            <li>Clean Code</li>
+                            <li>HTML and CSS: Design and Build Websites</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box">
+                        <h3 class="title is-4"><i class="fas fa-laptop-code"></i> Cursos Online</h3>
+                        <ul>
+                            <li>Codecademy</li>
+                            <li>freeCodeCamp</li>
+                            <li>Coursera</li>
+                            <li>edX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box">
+                        <h3 class="title is-4"><i class="fas fa-users"></i> Comunidades</h3>
+                        <ul>
+                            <li>Stack Overflow</li>
+                            <li>GitHub</li>
+                            <li>Reddit (r/learnprogramming)</li>
+                            <li>Dev.to</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered">Proyectos para Practicar</h2>
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Calculadora Simple</h3>
+                            <p>Crea una calculadora que pueda realizar operaciones básicas como suma, resta, multiplicación y división.</p>
+                            <ul class="mt-3">
+                                <li>Usa funciones para cada operación</li>
+                                <li>Implementa una interfaz de usuario simple</li>
+                                <li>Maneja errores como división por cero</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="title is-4">Lista de Tareas</h3>
+                            <p>Desarrolla una aplicación de lista de tareas que permita agregar, eliminar y marcar tareas como completadas.</p>
+                            <ul class="mt-3">
+                                <li>Almacena las tareas en un array</li>
+                                <li>Implementa funciones para manipular las tareas</li>
+                                <li>Crea una interfaz de usuario interactiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                        <li><a href="programacion.html" class="has-text-info">Programación</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024
+                </footer>
+
+                <script src="../js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66de621869870fb5788b843d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Instalación SO Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <!-- Navbar (same as other pages) -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/index.html">
+                    <strong>Instalación SO</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start navbar-centered">
+                    <a class="navbar-item" href="preparacion.html">Preparación</a>
+                    <a class="navbar-item" href="usb-booteable.html">USB Booteable</a>
+                    <a class="navbar-item" href="bios-uefi.html">BIOS/UEFI</a>
+                    <a class="navbar-item" href="instalacion-windows.html">Instalación Windows</a>
+                    <a class="navbar-item" href="post-instalacion.html">Post-Instalación</a>
+                    <a class="navbar-item" href="programacion.html">Programación</a>
+                    <a class="navbar-item" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-medium is-info">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 animate__animated animate__fadeInDown">
+                    Preguntas Frecuentes
+                </h1>
+                <h2 class="subtitle is-3 animate__animated animate__fadeInUp">
+                    Respuestas a las dudas más comunes sobre la instalación de sistemas operativos
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2 class="title is-2">Preguntas Generales</h2>
+                
+                <div class="box">
+                    <h3 class="title is-4">¿Qué es un sistema operativo?</h3>
+                    <p>Un sistema operativo es el software principal que gestiona los recursos de hardware y software de un ordenador. Actúa como intermediario entre el usuario y el hardware, permitiendo la ejecución de aplicaciones y la gestión de tareas básicas.</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Por qué necesito instalar un sistema operativo?</h3>
+                    <p>La instalación de un sistema operativo es necesaria para que el ordenador funcione y pueda ejecutar programas. Sin un sistema operativo, el hardware de la computadora no podría comunicarse con el software y no sería útil para el usuario.</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Cuánto tiempo lleva instalar un sistema operativo?</h3>
+                    <p>El tiempo de instalación puede variar dependiendo del hardware de tu ordenador y el sistema operativo que estés instalando. En general, puede llevar entre 30 minutos y 2 horas, incluyendo la configuración inicial.</p>
+                </div>
+
+                <h2 class="title is-2">Preparación</h2>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Necesito hacer una copia de seguridad antes de instalar un nuevo sistema operativo?</h3>
+                    <p>Sí, es muy recomendable hacer una copia de seguridad de todos tus datos importantes antes de instalar un nuevo sistema operativo. Esto te protegerá en caso de que algo salga mal durante la instalación.</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Qué herramientas necesito para crear un USB booteable?</h3>
+                    <p>Necesitarás una unidad USB con al menos 8GB de capacidad y un software como Rufus o el Creador de Medios de Windows para crear el USB booteable. También necesitarás descargar la imagen ISO del sistema operativo que deseas instalar.</p>
+                </div>
+
+                <h2 class="title is-2">Instalación</h2>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Qué debo hacer si mi ordenador no arranca desde el USB?</h3>
+                    <p>Si tu ordenador no arranca desde el USB, necesitarás entrar en la BIOS o UEFI y cambiar el orden de arranque para que el USB tenga prioridad. Consulta el manual de tu ordenador o placa base para saber cómo acceder a la BIOS/UEFI.</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Puedo instalar más de un sistema operativo en mi ordenador?</h3>
+                    <p>Sí, es posible instalar múltiples sistemas operativos en un solo ordenador. Esto se llama configuración de "arranque dual" o "multi-boot". Sin embargo, requiere una planificación cuidadosa y puede ser más complicado que instalar un solo sistema operativo.</p>
+                </div>
+
+                <h2 class="title is-2">Post-Instalación</h2>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Qué debo hacer después de instalar el sistema operativo?</h3>
+                    <p>Después de la instalación, deberías:<br>
+                    1. Actualizar el sistema operativo<br>
+                    2. Instalar los controladores de dispositivos<br>
+                    3. Instalar un software antivirus<br>
+                    4. Instalar las aplicaciones que necesitas<br>
+                    5. Restaurar tus datos desde la copia de seguridad</p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title is-4">¿Cómo puedo mejorar el rendimiento de mi sistema recién instalado?</h3>
+                    <p>Puedes mejorar el rendimiento:<br>
+                    1. Desinstalando software innecesario<br>
+                    2. Desactivando efectos visuales innecesarios<br>
+                    3. Realizando desfragmentación del disco duro (para discos HDD)<br>
+                    4. Manteniendo el sistema actualizado<br>
+                    5. Utilizando un software de limpieza de sistema confiable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Sobre este tutorial</h3>
+                    <p class="has-text-light">Este tutorial fue creado para proporcionar una guía clara y detallada para la instalación de Windows 10.</p>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="preparacion.html" class="has-text-info">Preparación</a></li>
+                        <li><a href="usb-booteable.html" class="has-text-info">USB Booteable</a></li>
+                        <li><a href="bios-uefi.html" class="has-text-info">BIOS/UEFI</a></li>
+                        <li><a href="instalacion-windows.html" class="has-text-info">Instalación Windows</a></li>
+                        <li><a href="post-instalacion.html" class="has-text-info">Post-Instalación</a></li>
+                        <li><a href="programacion.html" class="has-text-info">Programación</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="has-text-info">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h3 class="title is-4 has-text-white">Contacto</h3>
+                    <p class="has-text-light">Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:</p>
+                    <p class="has-text-light"><strong class="has-text-info">Email:</strong> info@instalacionso.com</p>
+                </div>
+            </div>
+            <hr class="has-background-grey-lighter">
+            <div class="has-text-centered mt-6">
+                <p class="has-text-light">&copy; 2024 Tutorial de Instalación SO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66de621869870fb5788b843d' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
